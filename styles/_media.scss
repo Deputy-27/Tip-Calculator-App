@@ -1,0 +1,43 @@
+// @import "config";
+
+@media (max-width: 790px) {
+    .container{
+        flex-direction: column;
+        width: 350px;
+        height: 70%;
+        padding: 0.5rem;
+    }
+    .left-container{
+        width: 100% !important;
+    }
+    .bill-container{
+       justify-content: center !important;
+       align-items: center !important;
+    }
+    .dollar{
+        left: 20px;
+    }
+    .tip-container{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .people-container{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .fa-user{
+        left: 20px;
+    }
+    .button-container{
+        margin: 0 auto;
+    }
+    .button-container button{
+        width: 45% !important;
+    }
+    #custom{
+        width: 45% !important;
+    }
+    .calculation-container{
+        width: 100% !important;
+    }
+}

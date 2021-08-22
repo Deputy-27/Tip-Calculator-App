@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+</head>
+<body>
+    <img src="/images/logo.svg" alt="logo" class="logo">
+    <div class="container">
+        <div class="left-container">
+            <div class="bill-container">
+                <label for="bill" class="bill-label">Bill</label>
+                <span class="dollar">$</span>
+                <input type="text" id="bill" class="label-input" placeholder="0">
+            </div>
+    
+            <div class="people-container">
+                <label for="people" class="people-bill">Number of People</label>
+                <i class="fas fa-user"></i>
+                <input type="text" class="people-input" id="people" placeholder="0">
+            </div>
+
+            <div class="tip-container">
+                <h3 class="tip-heading">Select Tip %</h3>   
+                <div class="button-container">
+                    <button class="five">5<span>%</span></button>
+                    <button class="ten">10<span>%</span></button>
+                    <button class="fifteen">15<span>%</span></button>
+                    <button class="twentyfive">25<span>%</span></button>
+                    <button class="fifty">50<span>%</span></button>
+                    <input type="text" class="custom" id="custom" placeholder="Custom"></input>
+                </div>
+            </div>
+    
+
+        </div>
+
+
+        <div class="calculation-container">
+            <div class="tip-amount">
+                <h3 class="amount-person">Tip Amount<span class="person">/ person</span></h3>
+                <span class="amount">$<span class="tip-amount-value">0.00</span></span>
+            </div>
+            <div class="total">
+                <h3 class="total-person">Total<span class="person">/ person</span></h3>
+                <span class="amount">$<span class="total-amount-value">0.00</span></span>
+            </div>
+            <button class="reset" disabled>RESET</button>
+        </div>
+
+    </div>
+</body>
+</html>

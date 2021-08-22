@@ -1,0 +1,199 @@
+@import "config";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: $lightGrayish;
+    height: 100vh;
+    @include flex(center, center, column);
+}
+input{
+    font-family: inherit;
+}
+input:focus{
+    outline: none;
+}
+.logo{
+    margin-bottom: 1rem;
+}
+
+// container
+.container{
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    @include flex(space-around, center, row);
+    .left-container{
+        width: 50%;
+    }
+    // bill container
+    .bill-container{
+        @include flex(flex-start, flex-start, column);
+        position: relative;
+        margin-bottom: 1rem;
+        .bill-label{
+            color: $darkerGrayish;
+            margin-bottom: 0.25rem;
+            font-weight: bold;
+        }
+        .label-input{
+            background-color: $lighterGrayish;
+            text-align: right;
+            font-size: $fSize;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            color: $veryDark;
+            width: 90%;
+        }
+        .label-input::placeholder{
+            color: $veryDark;
+        }
+        .dollar{
+            position: absolute;
+            top: 2rem;
+            padding: 0 0.5rem;
+            font-size: 1.2rem;
+            color: $darkGrayish;
+        }
+    }
+    // tip container
+    .tip-container{
+        margin-bottom: 1rem;
+    }
+    .tip-heading{
+        color: $darkerGrayish;
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    // button container
+    .button-container{
+        width: 90%;
+    }
+    .button-container button{
+        background-color: $veryDark;
+        color: $white;
+        font-size: $fSize;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-right: 0.25rem;
+        margin-bottom: 0.5rem;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s linear;
+    }
+    .button-container button:focus, #custom:focus{
+        background-color: $strong;
+        color: $veryDark;
+    }
+    .button-container button:hover{
+        background-color: $strong;
+    }
+    #custom{
+        background-color: $lightGrayish;
+        color: $darkerGrayish;
+        font-size: 1rem;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-right: 0.25rem;
+        margin-bottom: 0.5rem;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s linear;
+    }
+    #custom:hover{
+        background-color: $strong;
+        color: $white;
+    }
+    .people-container{
+        @include flex(flex-start, flex-start, column);
+        position: relative;
+        margin-bottom: 1rem;
+        .people-bill{
+            color: $darkerGrayish;
+            margin-bottom: 0.25rem;
+            font-weight: bold;
+        }
+        .people-input{
+            background-color: $lighterGrayish;
+            text-align: right;
+            font-size: $fSize;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            color: $veryDark;
+            width: 90%;
+        }
+        .people-input::placeholder{
+            color: $veryDark;
+        }
+        .fa-user{
+            position: absolute;
+            top: 2.4rem;
+            padding: 0 0.5rem;
+            font-size: 1.2rem;
+            color: $darkGrayish;
+        }
+    }
+    // calculation container
+.calculation-container{
+    background-color: $veryDark;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 50%;
+    height: 100%;
+    position: relative;
+.person{
+    font-size: 0.9rem;
+    color: $darkGrayish;
+}
+.amount{
+    color: $strong;
+    font-size: 2rem;
+}
+    .tip-amount{
+        @include flex(space-between, center, row);
+        margin-bottom: 2rem;
+        .amount-person{
+            @include flex(space-between, flex-start, column);
+            color: $lightGrayish;
+        }
+    }
+    .total{
+        @include flex(space-between, center, row);
+        .total-person{
+            @include flex(space-between, flex-start, column);
+            color: $lightGrayish;
+        }
+    }
+    .reset{
+        width: 87.5%;
+        font-size: $fSize;
+        background-color: $strong;
+        color: $veryDark;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 0.35rem;
+        position: absolute;
+        bottom: 24px;
+        cursor: pointer;
+    }
+    .reset:disabled{
+        cursor: not-allowed;
+        background-color: $darkerGrayish;
+    }
+}
+}
+
+@import "media";

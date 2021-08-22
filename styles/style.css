@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input {
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .left-container {
+  width: 50%;
+}
+
+.container .bill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.container .bill-container .bill-label {
+  color: #5e7a7d;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.container .bill-container .label-input {
+  background-color: #f4fafa;
+  text-align: right;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  color: #00494d;
+  width: 90%;
+}
+
+.container .bill-container .label-input::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+.container .bill-container .label-input:-ms-input-placeholder {
+  color: #00494d;
+}
+
+.container .bill-container .label-input::-ms-input-placeholder {
+  color: #00494d;
+}
+
+.container .bill-container .label-input::placeholder {
+  color: #00494d;
+}
+
+.container .bill-container .dollar {
+  position: absolute;
+  top: 2rem;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #7f9c9f;
+}
+
+.container .tip-container {
+  margin-bottom: 1rem;
+}
+
+.container .tip-heading {
+  color: #5e7a7d;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container .button-container {
+  width: 90%;
+}
+
+.container .button-container button {
+  background-color: #00494d;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 30%;
+  text-align: center;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.container .button-container button:focus, .container #custom:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.container .button-container button:hover {
+  background-color: #26c0ab;
+}
+
+.container #custom {
+  background-color: #c5e4e7;
+  color: #5e7a7d;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  margin-bottom: 0.5rem;
+  width: 30%;
+  text-align: center;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.container #custom:hover {
+  background-color: #26c0ab;
+  color: white;
+}
+
+.container .people-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.container .people-container .people-bill {
+  color: #5e7a7d;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.container .people-container .people-input {
+  background-color: #f4fafa;
+  text-align: right;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  color: #00494d;
+  width: 90%;
+}
+
+.container .people-container .people-input::-webkit-input-placeholder {
+  color: #00494d;
+}
+
+.container .people-container .people-input:-ms-input-placeholder {
+  color: #00494d;
+}
+
+.container .people-container .people-input::-ms-input-placeholder {
+  color: #00494d;
+}
+
+.container .people-container .people-input::placeholder {
+  color: #00494d;
+}
+
+.container .people-container .fa-user {
+  position: absolute;
+  top: 2.4rem;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #7f9c9f;
+}
+
+.container .calculation-container {
+  background-color: #00494d;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.container .calculation-container .person {
+  font-size: 0.9rem;
+  color: #7f9c9f;
+}
+
+.container .calculation-container .amount {
+  color: #26c0ab;
+  font-size: 2rem;
+}
+
+.container .calculation-container .tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.container .calculation-container .tip-amount .amount-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #c5e4e7;
+}
+
+.container .calculation-container .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .calculation-container .total .total-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #c5e4e7;
+}
+
+.container .calculation-container .reset {
+  width: 87.5%;
+  font-size: 1.4rem;
+  background-color: #26c0ab;
+  color: #00494d;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.35rem;
+  position: absolute;
+  bottom: 24px;
+  cursor: pointer;
+}
+
+.container .calculation-container .reset:disabled {
+  cursor: not-allowed;
+  background-color: #5e7a7d;
+}
+
+@media (max-width: 790px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    height: 70%;
+    padding: 0.5rem;
+  }
+  .left-container {
+    width: 100% !important;
+  }
+  .bill-container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .dollar {
+    left: 20px;
+  }
+  .tip-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .people-container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .fa-user {
+    left: 20px;
+  }
+  .button-container {
+    margin: 0 auto;
+  }
+  .button-container button {
+    width: 45% !important;
+  }
+  #custom {
+    width: 45% !important;
+  }
+  .calculation-container {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
